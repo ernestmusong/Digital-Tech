@@ -33,7 +33,7 @@ body {
   /* color: #ff65bd !important; */
   text-transform: uppercase !important;
   color: #c39013 !important;
-  font-size: 1.7rem !important;
+  font-size: 1.7rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -166,7 +166,7 @@ nav .active-link {
 }
 
 .carousel-caption h1 {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   text-align: left;
   text-transform: uppercase;
   animation: run-right 2s ease, shine 2s forwards, blink 3s 2s infinite;
@@ -184,7 +184,7 @@ nav .active-link {
   text-align: left;
   animation: pop-up-text 4s linear;
   font-weight: bolder;
-  font-size: 0.7rem;
+  /* font-size: 0.7rem; */
   letter-spacing: 0;
   color: #ffe6ff;
   text-transform: capitalize;
@@ -558,6 +558,7 @@ input[type="submit"]:hover {
   display: flex !important;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem;
 }
 
 .contact-row h2 {

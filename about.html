@@ -26,8 +26,8 @@
     <div id="big-nav">
         <div class="contact-links">
             <div class="left">
-                <a href=""><i class="fas fa-map-marker-alt mr-2"></i><span>Douala, Cameroon.</span></a>
-                <a href=""><i class="fas fa-phone-alt mr-2"></i><span>+237668107827</span></a>
+                <a href=""><i class="fas fa-map-marker-alt mr-2"></i><span>Buea, Cameroon.</span></a>
+                <a href=""><i class="fas fa-phone-alt mr-2"></i><span>+237676308067</span></a>
                 <a href="mailto:info@emmacroy.com"><i class="fas fa-envelope-square mr-2"></i><span>info@emmacroy.com</span></a>
             </div>
             <div class="right">
@@ -54,10 +54,7 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-md navbar-dark" id="nav">
-            <a class="navbar-brand" href="#">
-            <i class="fas fa-chevron-left"><i class="fas fa-slash "></i></i><span>emmacroy technologies</span> <span><i
-                    class="fas fa-chevron-right"></i></span>
-            </a>
+        <a class="navbar-brand" href="index.html">emmacroy technologies</a>
             <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -65,39 +62,37 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link " href="index.html">
                             HOME
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link active-link" href="about.html">ABOUT</a>
+                        <a class="nav-link active-link" href="about.html" >ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../#trainings">trainnings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="price.html">PRICING</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">CONTACT</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="webdev.html">training</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="faq.html">faq</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="buttons nav-link">
+                        <a onclick="createAccount()" class="buttons nav-link btn">
                             apply now
                         </a>
                     </li>
-                    <li class="nav-item">
-            <a onclick="document.getElementById('login-form').style.display='block'" class="buttons nav-link btn login-btn">
-              login
-            </a>
-          </li>
+                    <!-- <li class="nav-item">
+                            <a onclick="document.getElementById('login-form').style.display='block'" class="buttons nav-link btn login-btn">
+                              login
+                            </a>
+                          </li> -->
                 </ul>
             </div>
         </nav>
@@ -116,24 +111,29 @@
             <div class="row">
                 <div class="col-lg-6 ">
                     <h2 class="title">who <span class="home-span">we are</span></h2>
-                    <p class="mb-2">We are a creative, full-service website design, digital marketing and web development agency in Cameroon that specializes in creating world-class
-                    websites & brand experiences for companies that desire to be on top & absolutely remain on top, train aspiring web developers and help them stand out in the job market. 
-                </p>
-                <p>Our main focus is Website Design and Development, ECommerce Store, Digital Marketing/Advertising,
-                Branding and UI/UX. 
+                    <p class="mb-2">We are a creative, full-service web development training center located in Buea.
+                        We train Cameroonians on highly-paid in-demand IT skills to enable them access high quality jobs worldwide.
+                        We do not only train young Cameroonians but we also assist our students get jobs upon completion of the program.
+                         </p>
+                        <p class="mb-2"> 
+                            When students complete our regular twelve months(9 months fast track) program, we enroll them into the <a href="https://www.microverse.org/" target="blank">microverse</a> program where they will take another 7 to 11 months to get a <a href="https://support.microverse.org/en/articles/1908235-what-is-the-cost-of-the-program" target="blank">highly paid job</a>.
+                        </p>
+                <p>Our main focus is Web Development training but we also render other services such as SEO, wordpress and dital marketing.
+                
                 </p>
                 </div>
                 <div class="col-lg-6 ">
                     <div>
                         <button class="accordion" id="accordion">Our Mission</button>
                         <div class="panel">
-                            <p>To bridge the gap between Online Branding in Cameroon and other developed countries and become the best website designers
-                            in Cameroon and Africa.</p>
+                            <p>We are set on a mission to provide highly paid in-demand IT skills to cameroonians and Africans that will enable them
+                            land high quality jobs worldwide. We want to be able to democratize quality technical training making it accessible to
+                            the least privileged so that they too can contribute value to society.</p>
                         </div>
                     
                         <button class="accordion">our vision</button>
                         <div class="panel">
-                            <p>To be a leading Digital Agency in Africa, and most preferred in Cameroon.</p>
+                            <p>To be a leading IT training center in Africa, and most preferred in Cameroon.</p>
                         </div>
                     
                         <button class="accordion">Our Values</button>
@@ -278,40 +278,16 @@
 </section>
 
 <!--End of Count up-->
-<!--progress bars-->
-<section class="home-sections">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <form action="">
-                    <div class="newsletter-wrapper">
-                        <div class="newsletter">
-                            <div class="newsletter-title">
-                                <h2>Subscribe to our newsletter</h2>
-                            </div>
-                            <div class="newsletter-input-wrapper">
-                                <input type="text" placeholder="Name" name="name" required>
-                                <div class="submit-wrapper">
-                                    <input type="text" placeholder="Email address" name="mail" required><span><input
-                                            type="submit" value="Submit"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+
     <!--contact us-->
     <section class="home-sections">
         <div class="container">
-            <div class="row mb-4 contact-row bg-dark py-2">
-                <div class="col-md-10 text-left text">
-                    <h2 class="text-capitalize text-left text-white">Need a Website for your Brand ?</h2>
+            <div class=" mb-4 contact-row bg-dark">
+                <div class=" text-left text">
+                    <h2 class="text-capitalize text-white">want to get in touch ?</h2>
 
                 </div>
-                <div class="col text-center button">
+                <div class=" text-center button">
                     <a href="contact.html" class="btn contact-button">contact us</a>
                 </div>
             </div>
@@ -336,8 +312,8 @@
                 <div class="inner-footer-child ">
                     <h3>contacts</h3>
                     <div class="inner-footer-grandchild">
-                        <a href=""><i class="fas fa-map-marker-alt mr-2"></i><span>Douala, Cameroon</span></a>
-                        <a href=""><i class="fas fa-phone-alt mr-2"></i><span>+237678204030/+237668107827</span></a>
+                        <a href=""><i class="fas fa-map-marker-alt mr-2"></i><span>Buea, Cameroon</span></a>
+                        <a href=""><i class="fas fa-phone-alt mr-2"></i><span>+237676308067</span></a>
                         <a href="mailto:info@emmacroy.com"><i class="fas fa-envelope-square mr-2"></i><span>info@emmacroy.com</span></a>
                         <div class="">
                             <a href="https://mobile.facebook.com/Emmacroy-Technologies-100377362043334/" target="blank">
@@ -368,24 +344,18 @@
                 <div class="inner-footer-child">
                     <h3>quick links</h3>
                     <div class="inner-footer-grandchild">
-                        <a href="index.html">home</a>
-                        <a href="about.html">about</a>
-                        <a href="../#services">services</a>
-                        <a href="contact.html">contact</a>
-
-                        <a href="price.html">pricing</a>
-                        <a href="faq.html">faq</a>
-                        <a href="../#trainings">trainnings</a>
+                    <a href="index.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="contact.html">contact</a>
+                    <a href="webdev.html">training</a>
+                    <a href="faq.html">faq</a>
                     </div>
                 </div>
 
                 <div class="inner-footer-child">
-                    <h3>trainings</h3>
+                    <h3>others</h3>
                     <div class="inner-footer-grandchild">
-                        <a href="webdev.html">web development</a>
-                        <a href="wordpress.html">wordpress development</a>
-                        <a href="digitalmark.html">digital marketing</a>
-                        <a href="graphic.html">graphic design</a>
+                        <a href="services.html">services</a>
                     </div>
                 </div>
 
