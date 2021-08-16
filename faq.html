@@ -2,23 +2,17 @@
 <html lang="en">
 
 <head>
-    <script data-ad-client="ca-pub-9680613684957513" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script data-ad-client="ca-pub-9680613684957513" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     
+    
     <title>Frequently Asked Questions | EmmaCroy Technologies</title>
-    <meta name="robots" content="index,follow" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="Frequently Asked Questions. We have answered some of the frequently asked questions from our students and clients." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/b42bc5ce06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" href="./images/images.png" />
     <link rel="stylesheet" href="index.css" />
-
 </head>
 
 <body>
@@ -105,67 +99,21 @@
     <div class="elfsight-app-d6a6466a-ad56-41f1-8bf3-81e1521c9191"></div>
     <!--End Whatsapp chat-->
 
-    <!--End of First section-->
-    <section class="home-sections">
-        <div class="container contact-page-container">
-            <div class="row">
-            <div class="col-lg-6">
-                
-            <div>
-                <h2 class="title">student <span class="home-span">area</span></h2>
-                <button class="accordion">Section 1</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
-                
-                <button class="accordion">Section 2</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
-                
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
-
-            </div>
-            </div>
-            <div class="col-lg-6">
-            
-                <div>
-                 <h2 class="title">client <span class="home-span">area</span></h2>
-                <button class="accordion">Section 1</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
-                
-                <button class="accordion">Section 2</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
-                
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
-
-              </div>
+    <!-- Accordion START -->
+    <div class="container home-sections">
+        <button class="accordion">First Accordion</button>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos
+                incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi,
+                sapiente, nostrum?</p>
         </div>
-      </div>
-      </div>
-    </section>
+        <button class="accordion">First Accordion</button>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos
+                incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi,
+                sapiente, nostrum?</p>
+        </div>
+    </div>
 
     <!--contact us-->
     <section>
@@ -301,22 +249,24 @@
         });
 
         //FAQ
+    const accordionBtns = document.querySelectorAll(".accordion"); 
+    accordionBtns.forEach((accordion) => {
+        accordion.onclick = function () {
 
-        var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                    this.classList.toggle("faq-hover");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                        panel.style.display = "none";
-                    } else {
-                        panel.style.display = "block";
-                    }
-                });
+            this.classList.toggle("is-open");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                //this is if the accordion is open
+                content.style.maxHeight = null;
+            } else {
+                //if the accordion is currently closed
+                content.style.maxHeight = content.scrollHeight + "px";
             }
+        };
+    });
+        
     </script>
+     
 </body>
 
 </html>
